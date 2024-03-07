@@ -1,0 +1,33 @@
+body {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+a {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+footer {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
