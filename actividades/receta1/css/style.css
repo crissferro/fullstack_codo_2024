@@ -1,41 +1,51 @@
 body {
-    display: flex;
     min-height: 100vh;
-    flex-direction: column
-        /* min-height: 100%;
-    margin: 0 auto;
-    max-width: 95%; */
 }
 
 header {
     background-color: orange;
 }
 
-a {
+nav a {
     background-color: orangered;
     color: white;
     text-decoration: none;
 }
 
-img {
-    display: block;
+main img {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
 }
 
-footer {
-    width: 100%;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*     display: flex;
-    background-color: orange;
-    justify-content: center; */
+main .sucursales {
+    text-align: left;
 }
 
-.social-media {
-    width: 33%;
+footer {
+    background-color: orange;
     display: flex;
+    height: 14vh;
+    align-items: center;
+}
+
+ul {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 1.5%;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+}
+
+li img {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
 }
