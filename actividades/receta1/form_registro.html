@@ -25,32 +25,27 @@
       
       <h4>Por favor complete los campos a continuación.</h4>
 
-      <form action="Contacto">
+      <form action="" method="get">
         <fieldset>
                   <legend>Datos personales</legend>
-        <label for="primer_nombre">Nombre: </label>
-        <input type="text" size="40" name="primer_nombre" placeholder="Ingrese su nombre aquí...">
-        <label for="apellido">Apellido: </label>
-        <input type="text" size="40" name="apellido" placeholder="Ingrese su apellido aquí...">
+        <label>Nombre: <input type="text" size="40" name="primer_nombre" placeholder="Ingrese su nombre aquí..."></label>
+        <label>Apellido: <input type="text" size="40" name="apellido" placeholder="Ingrese su apellido aquí..."></label>
         <br><br>
-        <label for="direccion">Dirección: </label>
-        <input type="text" name="direccion" placeholder="Ingrese su dirección aquí...">
-        <label for="codigo_postal">Codigo Postal: </label>
-        <input type="text" name="codigo_postal" placeholder="Ingrese su C.P. aquí...">
+        <label>Dirección: <input type="text" name="direccion" placeholder="Ingrese su dirección aquí..."></label>
+        <label>Codigo Postal: <input type="text" name="codigo_postal" placeholder="Ingrese su C.P. aquí..."></label>
         <br><br>
-        <label for="telefono">Teléfono: </label>
-        <input type="tel" name="teléfono" placeholder="Ingrese su teléfono aquí...">
-        <label for="fecha_nac">Fecha de Nacimiento</label>
-        <input type="date" name="fech_nac">
+        <label>Teléfono: <input type="tel" name="telefono" placeholder="Ingrese su teléfono aquí..."></label>
+        <label>Fecha de Nacimiento: <input type="date" name="fech_nac"></label>
+        
         </fieldset>
 <br>
 <fieldset>
   <label for="estudios">Estudios</label>
-  <input type="checkbox" name="estudios">Primarios
-  <input type="checkbox" name="estudios">Secundarios
-  <input type="checkbox" name="estudios">Terciarios
-  <input type="checkbox" name="estudios">Universitarios
-  <input type="checkbox" name="estudios">Otro
+  <input type="radio" name="estudios">Primarios
+  <input type="radio" name="estudios">Secundarios
+  <input type="radio" name="estudios">Terciarios
+  <input type="radio" name="estudios">Universitarios
+  <input type="radio" name="estudios">Otro
 </fieldset>
 
         <textarea name="consulta" id="comentario" cols="30" rows="10" placeholder="Escriba su comentario aquí"></textarea>
@@ -61,14 +56,17 @@
       </form>
 
     </main>
-    <footer class="footer">
-      <ul>
-        <li><a href="#" target="_blank"><img src="./img/fb.png" alt="Facebook"></a></li>
-        <li><a href="#" target="_blank"><img src="./img/tw.png" alt="Twitter"></a></li>
-      </ul>
-      <ul>
-        <li>Derechos reservados @2020</li>
-      </ul>
+    <footer>
+        
+      <div>
+        <ul class="redes">
+            <li><a href="#" target="_blank"><img src="./img/fb.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="./img/tw.png" alt="Twitter"></a></li>
+        </ul>
+      </div>
+       
+        <div class="copyright">Derechos reservados @2020</div>
+
     </footer>
   </body>
 </html>
