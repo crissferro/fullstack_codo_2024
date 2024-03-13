@@ -18,33 +18,42 @@ main img {
     width: 25%;
 }
 
-main .sucursales {
+.sucursales {
     text-align: left;
+}
+
+.google {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.google iframe {
+    width: 100%;
 }
 
 footer {
     background-color: orange;
-    display: flex;
     height: 14vh;
     align-items: center;
+    display: inline-block;
 }
 
-ul {
-    width: 30%;
+.redes {
+    display: inline-flex;
+    list-style: none;
+
     margin: auto;
     text-align: center;
-    align-items: center;
+
     height: 100%;
+
+}
+
+.a .img {
     padding-top: 1.5%;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    align-items: center;
-}
-
-li img {
     width: 35px;
     height: 35px;
     border-radius: 30px;
