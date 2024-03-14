@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="menu">
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="acercade.html">Acerca de</a>
         <a href="contacto.html">Contacto</a>
@@ -25,9 +25,9 @@
       
       <h4>Por favor complete los campos a continuación.</h4>
 
-      <form action="" method="get">
+      <form action="" method="POST">
         <fieldset>
-                  <legend>Datos personales</legend>
+                  <legend>Datos Personales</legend>
         <label>Nombre: <input type="text" size="40" name="primer_nombre" placeholder="Ingrese su nombre aquí..."></label>
         <label>Apellido: <input type="text" size="40" name="apellido" placeholder="Ingrese su apellido aquí..."></label>
         <br><br>
@@ -40,6 +40,14 @@
         </fieldset>
 <br>
 <fieldset>
+  <legend>Datos del Sitio</legend>
+<label>Nombre de usuario: <input type="text" size="40" name="usuario" placeholder="Ingrese su nombre de usuario aquí..."></label>
+<label>Contraseña: <input type="password" size="40" name="password" placeholder="Ingrese su contraseña aquí..."></label>
+
+</fieldset>
+<br>
+<fieldset>
+  <legend>Datos Adicionales</legend>
   <label for="estudios">Estudios</label>
   <input type="radio" name="estudios">Primarios
   <input type="radio" name="estudios">Secundarios
@@ -47,25 +55,33 @@
   <input type="radio" name="estudios">Universitarios
   <input type="radio" name="estudios">Otro
 </fieldset>
-
-        <textarea name="consulta" id="comentario" cols="30" rows="10" placeholder="Escriba su comentario aquí"></textarea>
+<fieldset>
+  <legend>Más Datos</legend>
+  <textarea name="consulta" id="comentario" cols="80" rows="10" placeholder="Escriba su comentario aquí ..."></textarea>
+</fieldset>
+        
         <br><br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Registrarse">
         <br>
         <p>Si usted hace click en el botón "Enviar", la información será enviada al sitio.</p>
       </form>
 
     </main>
-    <footer>
+    <footer class="footer">
         
-      <div>
+      <div class="box">
         <ul class="redes">
             <li><a href="#" target="_blank"><img src="./img/fb.png" alt="Facebook"></a></li>
             <li><a href="#" target="_blank"><img src="./img/tw.png" alt="Twitter"></a></li>
         </ul>
       </div>
        
-        <div class="copyright">Derechos reservados @2020</div>
+        <div class="box">
+          <p class="copyright">
+                    Derechos reservados @2020
+          </p>
+
+        </div>
 
     </footer>
   </body>

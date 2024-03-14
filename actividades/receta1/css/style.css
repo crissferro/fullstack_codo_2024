@@ -1,15 +1,25 @@
 body {
+    position: relative;
+    /* padding-bottom: 3em; */
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
-header {
+.menu {
     background-color: orange;
+    height: auto;
 }
 
-nav a {
+.nav a {
     background-color: orangered;
     color: white;
     text-decoration: none;
+}
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 main img {
@@ -18,43 +28,48 @@ main img {
     width: 25%;
 }
 
-.sucursales {
+main .sucursales {
     text-align: left;
 }
 
-.google {
+main .mapas .google {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    float: left;
-    width: 25%;
-    padding: 5px;
+    float: inline-start;
+    margin: 10px;
+    padding: 1px;
 }
 
-.google iframe {
+main .mapas .google iframe {
+    width: 250px;
+    height: 250px;
+}
+
+.footer {
+    background-color: orange;
+    height: 20vh;
+    margin-top: auto;
     width: 100%;
 }
 
-footer {
-    background-color: orange;
-    height: 14vh;
-    align-items: center;
-    display: inline-block;
+.footer .box {
+    display: grid;
 }
 
-.redes {
-    display: inline-flex;
+.footer .box .redes {
     list-style: none;
-
-    margin: auto;
-    text-align: center;
-
-    height: 100%;
-
+    justify-content: center;
+    display: inline-flex;
 }
 
-.a .img {
-    padding-top: 1.5%;
+.footer .box .redes img {
+    display: inline-block;
+    margin-right: 10px;
     width: 35px;
     height: 35px;
     border-radius: 30px;
+}
+
+.footer .box .copyright {
+    text-align: center;
 }
