@@ -30,6 +30,7 @@ main img {
 
 main .sucursales {
     text-align: left;
+    font-size: smaller;
 }
 
 main .mapas .google {
