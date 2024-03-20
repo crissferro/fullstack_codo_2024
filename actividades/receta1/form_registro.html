@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e0f7a1940e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="menu">
+    <header>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="acercade.html">Acerca de</a>
@@ -15,94 +19,128 @@
         <a href="sucursales.html">Sucursales</a>
         <a href="form_registro.html">Registro</a>
       </nav>
-        <p>
-          <h1 align="center">La cocina de Juan</h1>
-        </p>
+      <h1>La cocina de Juan</h1>
     </header>
 
     <main>
       <h3>Formulario de registro</h3>
-      
-    <form action="" method="POST">
 
-
-          <label>Nombre: <input type="text" size="40" name="primer_nombre" placeholder="Ingrese su nombre aquí..."></label>
-          <label>Apellido: <input type="text" size="40" name="apellido" placeholder="Ingrese su apellido aquí..."></label>
-          <br><br>
-          <label>Dirección:</label> <br><br>
-          <label>Calle: <input type="text" name="direccion" placeholder="Ingrese su calle aquí..."></label>
-          <label>Numero: <input type="text" name="numero" placeholder="Ingrese el número..."></label>
-          <label>Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A."></label>
-          <label>Código Postal: <input type="text" name="codigo_postal" placeholder="Ingrese su codigo postal..."></label>
-          <br><br>
-          <label>Teléfono: <input type="tel" name="telefono" placeholder="Ingrese su teléfono aquí..."></label>
-          <label>Fecha de Nacimiento: <input type="date" name="fech_nac"></label>
-          <label>Mail: <input type="text" size="20" name="mail"></label>
-          <label>Clave: <input type="password" size="20" name="password"></label>
-          <label>Link del TP 3: <input type="text" size="20" name="link"></label>
-
-<br><br>
-
-
-          <label>Genero: (Radio) </label>
-          <input type="radio" name="genero">Hombre
-          <input type="radio" name="genero">Mujer
-          <input type="radio" name="genero">Otro
-
-<br><br>
-
-          <label>Conocimientos previos: (checkbox)</label>
-          <input type="checkbox" name="cursos">HTML
-          <input type="checkbox" name="cursos">CSS
-          <input type="checkbox" name="cursos">Bootstrap
-          <input type="checkbox" name="cursos">Typescript
-          <input type="checkbox" name="cursos">Angular
-          <input type="checkbox" name="cursos">Base de Datos
-          <input type="checkbox" name="cursos">Python
-          <input type="checkbox" name="cursos">Django
-
-<br>
-<br>
-
-          <label for="estudios">Estudios: (Select)</label>
-            <select name="estudios" id="estudios">
-              <option value="primario">Primarios</option>
-              <option value="secundarios">Secundarios</option>
-              <option value="terciarios">Terciarios</option>
-              <option value="universitarios">Universitarios</option>
-              <option value="otro">Otro</option>
-            </select>  
-
-<br>
-<br>
-          <label>Comentarios:</label>
-          <br>
-          <textarea name="comentarios" id="comentario" cols="50" rows="10"></textarea>
-
-        
-        <br>
-        <input type="submit" value="Enviar">
-        <br><br>
-
-      </form>
-
-    </main>
-    <footer class="footer">
-        
-      <div class="box">
-        <ul class="redes">
-            <li><a href="#" target="_blank"><img src="img/fb.png" alt="Facebook"></a></li>
-            <li><a href="#" target="_blank"><img src="img/tw.png" alt="Twitter"></a></li>
-        </ul>
-      </div>
-       
-        <div class="box">
-          <p class="copyright">
-                    Derechos reservados @2020
-          </p>
-
+      <form action="" method="POST">
+        <div>
+          <label
+            >Nombre:
+            <input
+              type="text"
+              size="40"
+              name="primer_nombre"
+              placeholder="Ingrese su nombre aquí..."
+          /></label>
+          <label
+            >Apellido:
+            <input
+              type="text"
+              size="40"
+              name="apellido"
+              placeholder="Ingrese su apellido aquí..."
+          /></label>
         </div>
+        <div>
+          <label>Dirección:</label>
+        </div>
+        <div>
+          <label
+            >Calle:
+            <input
+              type="text"
+              name="direccion"
+              placeholder="Ingrese su calle aquí..."
+          /></label>
+          <label
+            >Numero:
+            <input type="text" name="numero" placeholder="Ingrese el número..."
+          /></label>
+          <label
+            >Ciudad: <input type="text" name="ciudad" placeholder="C.A.B.A."
+          /></label>
+          <label
+            >Código Postal:
+            <input
+              type="text"
+              name="codigo_postal"
+              placeholder="Ingrese su codigo postal..."
+          /></label>
+          <label
+            >Teléfono:
+            <input
+              type="tel"
+              name="telefono"
+              placeholder="Ingrese su teléfono aquí..."
+          /></label>
+        </div>
+        <div>
+          <label
+            >Fecha de Nacimiento: <input type="date" name="fech_nac"
+          /></label>
+          <label>Mail: <input type="text" size="20" name="mail" /></label>
+          <label
+            >Clave: <input type="password" size="20" name="password"
+          /></label>
+          <label
+            >Link del TP 3: <input type="text" size="20" name="link"
+          /></label>
+        </div>
+        <div>
+          <label>Genero: (Radio) </label>
+          <input type="radio" name="genero" />Hombre
+          <input type="radio" name="genero" />Mujer
+          <input type="radio" name="genero" />Otro
+        </div>
+        <div>
+          <label>Conocimientos previos: (checkbox)</label>
+          <input type="checkbox" name="cursos" />HTML
+          <input type="checkbox" name="cursos" />CSS
+          <input type="checkbox" name="cursos" />Bootstrap
+          <input type="checkbox" name="cursos" />Typescript
+          <input type="checkbox" name="cursos" />Angular
+          <input type="checkbox" name="cursos" />Base de Datos
+          <input type="checkbox" name="cursos" />Python
+          <input type="checkbox" name="cursos" />Django
+        </div>
+        <div>
+          <label for="estudios">Estudios: (Select)</label>
+          <select name="estudios" id="estudios">
+            <option value="primario">Primarios</option>
+            <option value="secundarios">Secundarios</option>
+            <option value="terciarios">Terciarios</option>
+            <option value="universitarios">Universitarios</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Comentarios:</label><br />
+          <textarea
+            name="comentarios"
+            id="comentario"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <br />
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
 
+      <div>
+        <p>Derechos reservados @2020</p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,30 +1,21 @@
 body {
-    position: relative;
-    /* padding-bottom: 3em; */
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu {
+header {
     background-color: black;
-    height: auto;
     color: white;
     padding-top: 10px;
+    text-align: center;
 }
 
+header .nav {
+    text-align: left;
+    margin-left: 5px;
+}
 
 .nav a {
-    background-color: grey;
-    border-radius: 3px;
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px;
-}
-
-main article a {
     background-color: grey;
     border-radius: 3px;
     color: white;
@@ -33,13 +24,20 @@ main article a {
 }
 
 main {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+main a {
+    background-color: grey;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
 }
 
 main img {
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 5px;
     width: 25%;
 }
 
@@ -48,45 +46,26 @@ main .sucursales {
     font-size: smaller;
 }
 
-main .mapas .google {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    float: inline-start;
-    margin: 10px;
-    padding: 1px;
+main .google {
+    margin: auto;
+    width: 80%;
+
 }
 
-main .mapas .google iframe {
+main .google iframe {
     width: 250px;
     height: 250px;
 }
 
-.footer {
+main form {
+    padding: 10px 20px;
+
+}
+
+footer {
     background-color: black;
     color: white;
-    height: 20vh;
-    margin-top: auto;
     width: 100%;
-}
-
-.footer .box {
-    display: grid;
-}
-
-.footer .box .redes {
-    list-style: none;
-    justify-content: center;
-    display: inline-flex;
-}
-
-.footer .box .redes img {
-    display: inline-block;
-    margin-right: 10px;
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
-}
-
-.footer .box .copyright {
     text-align: center;
+    padding-top: 5px;
 }
