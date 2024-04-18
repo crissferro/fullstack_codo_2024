@@ -1,13 +1,28 @@
-body {
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-  
+
 header {
     background-color: black;
     color: white;
-    padding-top: 10px;
-    text-align: center;
+    width: 100%;
+}
+
+.nav{
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    margin: 0.3%;
+    padding: 0.3%;
+    text-decoration: none;
+    font-size: 1.5vw;
+    left: 0;
+}
+
+.imgindex,.imgacercade{
+    width: 40%;
 }
 
 header .nav {
@@ -16,31 +31,11 @@ header .nav {
     animation: fondo_nav 3s linear 500ms 1 normal forwards;
 }
 
-.nav a {
-    background-color: grey;
-    border-radius: 3px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
+h1{
+    font-size: 3vw;
+    text-align: center;
 }
 
-main {
-    padding: 30px;
-    padding-top: 0px;
-}
-
-main a {
-    background-color: grey;
-    border-radius: 3px;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-}
-
-main img {
-    margin-bottom: 5px;
-    width: 25%;
-}
 
 main .sucursales {
     text-align: left;
@@ -57,9 +52,6 @@ main .google iframe {
     height: 250px;
 }
 
-main form {
-    padding: 10px 20px;
-}
 
 #clientes{
     display: grid;
@@ -88,5 +80,65 @@ footer {
     color: white;
     width: 100%;
     text-align: center;
-    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 50px;
+    margin-top: 0;
+}
+
+/* ----------- redes sociales ------------ */
+.redsoc {
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.redsoc a {
+    /*color: black;*/
+    margin: 0px 6px;
+    font-size: 2vw;
+}
+
+.redsoc a:hover {
+    color: #999999;
+}
+
+/* ----------- formulario contacto ------------ */
+
+label, input{
+    font-size: 1.0vw;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=email], input[type=number], input[type=url], input[type=textArea],input[type=tel], select{
+    width: 70%;
+    padding: 1vw;
+    margin: 1vw;
+    display: inline-block;
+    border: 1vw;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: aquamarine;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0 50px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario{
+    border-radius: 5px;
+    background-color: #999999;
+    padding: 2%;
+    margin: 1% 20%;
+}
+
+textarea {
+    width: 60%;
 }
